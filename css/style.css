@@ -1,0 +1,190 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+  --white-color: #f2e9e4;
+  --gray-color: #4a4e69;
+  --purple-color: #9a8c98;
+  --bage-color: #c9ada7;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  /* height: 5000px; */
+  /* background-color: #4d2b2b; */
+  /* background-color: #777; */
+  background-color: var(--bage-color);
+}
+.main-btn {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  background-color: var(--bage-color);
+  color: var(--white-color);
+}
+a {
+  /* text-decoration: none; */
+  color: var(--bage-color);
+}
+a:hover {
+  color: var(--white-color);
+}
+.head {
+  background-color: var(--gray-color);
+  color: var(--white-color) !important;
+}
+/* .main-title::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  left: 50%;
+  transform: translateX(-50%);
+} */
+/* start nav */
+nav {
+  background-color: var(--gray-color);
+}
+nav .lis .lisa {
+  color: var(--white-color) !important;
+}
+nav .lisdown {
+  background-color: var(--white-color);
+}
+/* nav .lisdown:hover {
+  background-color: var(--white-color);
+} */
+/* nav .lisdown:hover .lisdowna {
+  color: var(--gray-color);
+} */
+nav .lisdown .lisdowna {
+  color: var(--gray-color) !important;
+}
+/* end nav */
+
+/* start landing */
+.bjson {
+  background-color: rgb(220, 108, 220);
+  color: var(--white-color) !important;
+}
+.bjson:hover {
+  background-color: rgba(220, 108, 220, 0.815);
+}
+/* end landing */
+
+/* start intro */
+.intro {
+  background-color: var(--gray-color);
+}
+/* end intro */
+
+/* start languages */
+.languages .accordion-button {
+  color: var(--gray-color) !important;
+}
+.languages .accordion-button:hover {
+  background-color: var(--gray-color) !important;
+  color: var(--bage-color) !important;
+}
+.languages .accordion-body {
+  color: var(--bage-color);
+}
+/* end languages */
+
+/* start copy */
+.btnbefo {
+  position: relative;
+  left: 30px;
+}
+.btnbefo::before {
+  position: absolute;
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--gray-color) transparent;
+  top: 30px;
+  left: 20px;
+  display: none;
+}
+.btnbefo::after {
+  position: absolute;
+  content: " ";
+  height: 50px;
+  width: 100px;
+  background-color: var(--gray-color);
+  top: 50px;
+  left: -25px;
+  border-radius: 5px;
+  display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before {
+  display: block;
+}
+.btnbefo:hover::after {
+  content: "copy to clipboard";
+  display: block;
+  color: var(--white-color);
+}
+.btnbefo:active::after {
+  content: "copied";
+  display: block;
+  height: 25px;
+  color: var(--white-color);
+}
+/* end copy */
+
+/* start img1 */
+.fixedimg1 {
+  background-image: url(../images/fixed1.jpg);
+  background-attachment: fixed;
+  height: 250px;
+  background-size: cover;
+}
+/* end img1 */
+
+/* start basic */
+.basic {
+  background-color: var(--gray-color);
+}
+/* end basic */
+
+/* start img2 */
+.fixedimg2 {
+  background-image: url(../images/back.webp);
+  background-attachment: fixed;
+  height: 250px;
+  background-size: cover;
+}
+/* end img2 */
+
+/* satrt thanks */
+.thanks {
+  background-color: var(--gray-color);
+}
+/* end thanks */
+
+/* start joinus */
+.join-us {
+  background-color: var(--gray-color);
+}
+/* end joinus */
+
+/* start modal */
+.mod {
+  color: var(--gray-color) !important;
+}
+.modlog {
+  border: 1px solid var(--gray-color);
+}
+.modlog:hover {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}
+/* end modal */
